@@ -1,15 +1,16 @@
 {
   "name": "lib-angular-highcharts-es",
-  "version": "0.0.0",
+  "version": "17.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "build_lib": "ng build angular-highcharts-es --configuration production && cp README.md dist/angular-highcharts-es",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "lib:publish": "cd ./dist/angular-highcharts-es && yarn publish --access=public"
   },
-  "private": true,
+  "private": false,
   "engines": {
     "node": ">=16"
   },

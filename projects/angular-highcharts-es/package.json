@@ -1,7 +1,7 @@
 {
-  "name": "angular-highcharts-es",
+  "name": "@andrei4ik/angular-highcharts-es",
   "version": "17.0.1",
-  "author": "Felix Itzenplitz",
+  "author": "Andrei Shinkarev",
   "repository": {
     "type": "git",
     "url": "https://github.com/andrei4ik1997/angular-highcharts-es.git"

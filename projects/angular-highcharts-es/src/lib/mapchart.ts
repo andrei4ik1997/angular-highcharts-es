@@ -1,6 +1,5 @@
 import { ElementRef } from '@angular/core';
-// import * as Highcharts from 'highcharts';
-import * as Highmaps from 'highcharts/highmaps';
+import Highmaps from 'highcharts/es-modules/masters/highmaps.src';
 import { AsyncSubject, Observable } from 'rxjs';
 
 /**
@@ -23,8 +22,9 @@ export class MapChart {
 
   init(el: ElementRef): void {
     if (!this.ref) {
-      Highmaps.mapChart(el.nativeElement, this.options, chart => {
-        if (!this.ref) { // TODO: workaround for doubled callbacks on exporting charts: issue #238
+      Highmaps.mapChart(el.nativeElement, this.options, (chart) => {
+        if (!this.ref) {
+          // TODO: workaround for doubled callbacks on exporting charts: issue #238
           this.refSubject.next(chart);
           this.ref = chart;
           this.refSubject.complete();

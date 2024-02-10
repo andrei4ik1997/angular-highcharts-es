@@ -35,43 +35,43 @@ npm i --save angular-highcharts-es highcharts
 
 ```typescript
 // app.module.ts
-import { ChartModule } from 'angular-highcharts-es';
+import { ChartModule } from "angular-highcharts-es";
 
 @NgModule({
   imports: [
-    ChartModule // add ChartModule to your imports
-  ]
+    ChartModule, // add ChartModule to your imports
+  ],
 })
 export class AppModule {}
 ```
 
 ```typescript
 // chart.component.ts
-import { Chart } from 'angular-highcharts-es';
+import { Chart } from "angular-highcharts-es";
 
 @Component({
   template: `
     <button (click)="add()">Add Point!</button>
     <div [chart]="chart"></div>
-  `
+  `,
 })
 export class ChartComponent {
   chart = new Chart({
     chart: {
-      type: 'line'
+      type: "line",
     },
     title: {
-      text: 'Linechart'
+      text: "Linechart",
     },
     credits: {
-      enabled: false
+      enabled: false,
     },
     series: [
       {
-        name: 'Line 1',
-        data: [1, 2, 3]
-      }
-    ]
+        name: "Line 1",
+        data: [1, 2, 3],
+      },
+    ],
   });
 
   // add point to chart serie
@@ -104,7 +104,7 @@ ref: Highcharts.Chart;
 Deprecated. Please use `ref$`.
 
 ```typescript
-ref$: Observable<Highcharts.Chart>
+ref$: Observable<Highcharts.Chart>;
 ```
 
 Observable that emits a Highcharts.Chart - [Official Chart API Docs](https://api.highcharts.com/class-reference/Highcharts.Chart)
@@ -156,7 +156,7 @@ ref: Highstock.Chart;
 Deprecated. Please use `ref$`.
 
 ```typescript
-ref$: Observable<Highstock.Chart>
+ref$: Observable<Highstock.Chart>;
 ```
 
 Observable that emits a Highstock.Chart
@@ -199,16 +199,16 @@ Don't forget to use the modules with the `.src` suffix, minimized highcharts mod
 
 ```typescript
 // app.module.ts
-import { ChartModule, HIGHCHARTS_MODULES } from 'angular-highcharts-es';
-import * as more from 'highcharts/highcharts-more.src';
-import * as exporting from 'highcharts/modules/exporting.src';
+import { ChartModule, HIGHCHARTS_MODULES } from "angular-highcharts-es";
+import * as exporting from "highcharts/es-modules/masters/modules/exporting.src";
+import * as more from "highcharts/es-modules/masters/highcharts-more.src";
 
 @NgModule({
   providers: [
-    { provide: HIGHCHARTS_MODULES, useFactory: () => [ more, exporting ] } // add as factory to your providers
-  ]
+    { provide: HIGHCHARTS_MODULES, useFactory: () => [more, exporting] }, // add as factory to your providers
+  ],
 })
-export class AppModule { }
+export class AppModule {}
 ```
 
 ## Troubleshooting
@@ -221,6 +221,7 @@ If you expiring typing errors while you build/serve your angular app the followi
 // override options type with <any>
 chart = new Chart({ options } as any);
 ```
+
 This is very useful when using `gauge chart` type.
 
 ### Loading Highcharts Modules manually
@@ -229,8 +230,8 @@ See Official Highcharts Docs: http://www.highcharts.com/docs/getting-started/ins
 
 ## Demo
 
-* [Demo](https://angular-9nkrgd.stackblitz.io)
-* [Code](https://stackblitz.com/edit/angular-9nkrgd)
+- [Demo](https://angular-9nkrgd.stackblitz.io)
+- [Code](https://stackblitz.com/edit/angular-9nkrgd)
 
 ## License
 

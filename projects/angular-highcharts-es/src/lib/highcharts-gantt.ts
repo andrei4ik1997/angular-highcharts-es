@@ -1,5 +1,5 @@
 import { ElementRef } from '@angular/core';
-import * as Highcharts from 'highcharts/highcharts-gantt';
+import Highcharts from 'highcharts/es-modules/masters/highcharts-gantt.src';
 import { AsyncSubject, Observable } from 'rxjs';
 
 /**
@@ -22,8 +22,9 @@ export class HighchartsGantt {
 
   init(el: ElementRef): void {
     if (!this.ref) {
-      Highcharts.ganttChart(el.nativeElement, this.options, chart => {
-        if (!this.ref) { // TODO: workaround for doubled callbacks on exporting charts: issue #238
+      Highcharts.ganttChart(el.nativeElement, this.options, (chart) => {
+        if (!this.ref) {
+          // TODO: workaround for doubled callbacks on exporting charts: issue #238
           this.refSubject.next(chart);
           this.ref = chart;
           this.refSubject.complete();

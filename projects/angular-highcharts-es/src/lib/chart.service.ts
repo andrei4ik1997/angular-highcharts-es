@@ -7,19 +7,19 @@
  * https://github.com/andrei4ik1997/angular-highcharts-es/blob/master/LICENSE
  */
 import { Inject, Injectable, InjectionToken } from '@angular/core';
-import * as Highcharts from 'highcharts';
-import * as Highstock from 'highcharts/highstock';
-import * as Highmaps from 'highcharts/highmaps';
-import * as HighchartsGnatt from 'highcharts/highcharts-gantt';
+import Highcharts from 'highcharts/es-modules/masters/highcharts.src';
+import Highstock from 'highcharts/es-modules/masters/highstock.src';
+import Highmaps from 'highcharts/es-modules/masters/highmaps.src';
+import HighchartsGnatt from 'highcharts/es-modules/masters/highcharts-gantt.src';
 
 export let HIGHCHARTS_MODULES = new InjectionToken<any[]>('HighchartsModules');
 
 @Injectable()
 export class ChartService {
-  constructor(@Inject(HIGHCHARTS_MODULES) private chartModules: any[]) { }
+  constructor(@Inject(HIGHCHARTS_MODULES) private chartModules: any[]) {}
 
   initModules() {
-    this.chartModules.forEach(chartModule => {
+    this.chartModules.forEach((chartModule) => {
       [Highcharts, Highstock, Highmaps, HighchartsGnatt].forEach(chartModule);
     });
   }
