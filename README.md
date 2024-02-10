@@ -1,7 +1,7 @@
 # angular-highcharts-es
 
-[![NPM version](https://img.shields.io/npm/v/angular-highcharts.svg)](https://npmjs.org/package/angular-highcharts)
-[![NPM downloads](https://img.shields.io/npm/dt/angular-highcharts.svg)](https://npmjs.org/package/angular-highcharts)
+[![NPM version](https://img.shields.io/npm/v/angular-highcharts.svg)](https://npmjs.org/package/@andrei4ik/angular-highcharts-es)
+[![NPM downloads](https://img.shields.io/npm/dt/angular-highcharts.svg)](https://npmjs.org/package/@andrei4ik/angular-highcharts-es)
 ![](https://github.com/andrei4ik1997/angular-highcharts-es/workflows/Node.js%20Package/badge.svg)
 
 This is a directive for an easy usage of [Highcharts](https://www.highcharts.com/) with angular.
