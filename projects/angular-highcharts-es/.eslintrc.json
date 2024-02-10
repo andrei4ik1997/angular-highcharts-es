@@ -10,8 +10,8 @@
       ],
       "parserOptions": {
         "project": [
-          "projects/angular-highcharts/tsconfig.lib.json",
-          "projects/angular-highcharts/tsconfig.spec.json"
+          "projects/angular-highcharts-es/tsconfig.lib.json",
+          "projects/angular-highcharts-es/tsconfig.spec.json"
         ],
         "createDefaultProgram": true
       },

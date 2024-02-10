@@ -1,8 +1,8 @@
-# angular-highcharts
+# angular-highcharts-es
 
 [![NPM version](https://img.shields.io/npm/v/angular-highcharts.svg)](https://npmjs.org/package/angular-highcharts)
 [![NPM downloads](https://img.shields.io/npm/dt/angular-highcharts.svg)](https://npmjs.org/package/angular-highcharts)
-![](https://github.com/cebor/angular-highcharts/workflows/Node.js%20Package/badge.svg)
+![](https://github.com/andrei4ik1997/angular-highcharts-es/workflows/Node.js%20Package/badge.svg)
 
 This is a directive for an easy usage of [Highcharts](https://www.highcharts.com/) with angular.
 
@@ -20,22 +20,22 @@ This is a directive for an easy usage of [Highcharts](https://www.highcharts.com
 ### yarn
 
 ```bash
-# install angular-highcharts and highcharts
-yarn add angular-highcharts highcharts
+# install angular-highcharts-es and highcharts
+yarn add angular-highcharts-es highcharts
 ```
 
 ### npm
 
 ```bash
-# install angular-highcharts and highcharts
-npm i --save angular-highcharts highcharts
+# install angular-highcharts-es and highcharts
+npm i --save angular-highcharts-es highcharts
 ```
 
 ## Usage Example
 
 ```typescript
 // app.module.ts
-import { ChartModule } from 'angular-highcharts';
+import { ChartModule } from 'angular-highcharts-es';
 
 @NgModule({
   imports: [
@@ -47,7 +47,7 @@ export class AppModule {}
 
 ```typescript
 // chart.component.ts
-import { Chart } from 'angular-highcharts';
+import { Chart } from 'angular-highcharts-es';
 
 @Component({
   template: `
@@ -199,7 +199,7 @@ Don't forget to use the modules with the `.src` suffix, minimized highcharts mod
 
 ```typescript
 // app.module.ts
-import { ChartModule, HIGHCHARTS_MODULES } from 'angular-highcharts';
+import { ChartModule, HIGHCHARTS_MODULES } from 'angular-highcharts-es';
 import * as more from 'highcharts/highcharts-more.src';
 import * as exporting from 'highcharts/modules/exporting.src';
 

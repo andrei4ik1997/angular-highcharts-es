@@ -1,5 +1,5 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { Chart, StockChart } from 'angular-highcharts';
+import { Chart, StockChart } from 'angular-highcharts-es';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +7,7 @@ import { Chart, StockChart } from 'angular-highcharts';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit, AfterViewInit {
-  title = 'lib-angular-highcharts';
+  title = 'lib-angular-highcharts-es';
 
   chart!: Chart;
   stockChart!: StockChart;

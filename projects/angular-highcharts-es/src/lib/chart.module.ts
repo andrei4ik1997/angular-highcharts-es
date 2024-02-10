@@ -4,7 +4,7 @@
  *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at
- * https://github.com/cebor/angular-highcharts/blob/master/LICENSE
+ * https://github.com/andrei4ik1997/angular-highcharts-es/blob/master/LICENSE
  */
 import { NgModule } from '@angular/core';
 import { ChartDirective } from './chart.directive';

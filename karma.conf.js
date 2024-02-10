@@ -25,7 +25,7 @@ module.exports = function(config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/lib-angular-highcharts'),
+      dir: require('path').join(__dirname, './coverage/lib-angular-highcharts-es'),
       subdir: '.',
       reporters: [
         {type: 'html'},

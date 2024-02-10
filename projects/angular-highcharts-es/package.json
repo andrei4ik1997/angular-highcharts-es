@@ -1,10 +1,10 @@
 {
-  "name": "angular-highcharts",
+  "name": "angular-highcharts-es",
   "version": "17.0.1",
   "author": "Felix Itzenplitz",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cebor/angular-highcharts.git"
+    "url": "https://github.com/andrei4ik1997/angular-highcharts-es.git"
   },
   "keywords": [
     "angular",

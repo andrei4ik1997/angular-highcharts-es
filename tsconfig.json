@@ -12,8 +12,8 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "paths": {
-      "angular-highcharts": [
-        "dist/angular-highcharts"
+      "angular-highcharts-es": [
+        "dist/angular-highcharts-es"
       ]
     },
     "declaration": false,
